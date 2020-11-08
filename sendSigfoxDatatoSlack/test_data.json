@@ -1,0 +1,44 @@
+{
+    "Records": [
+        {
+            "eventID": "1",
+            "eventName": "INSERT",
+            "eventVersion": "1.0",
+            "eventSource": "aws:dynamodb",
+            "awsRegion": "{region}",
+            "dynamodb": {
+                "Keys": {
+                    "device": {
+                        "S": "75BE94"
+                    },
+                    "time": {
+                        "S": "1604466483"
+                    }
+                },
+                "NewImage": {
+                    "payload": {
+                        "M": {
+                            "data": {
+                                "S": "030041dc0000404e6666"
+                            },
+                            "device": {
+                                "S": "75BE94"
+                            },
+                            "deviceTypeId": {
+                                "S": "5ee333b2c563d643faa6dbcc"
+                            },
+                            "seqNumber": {
+                                "S": "3550"
+                            },
+                            "time": {
+                                "S": "1604466483"
+                            }
+                        }
+                    }
+                },
+                "seqNumber": "3550"
+            },
+            "eventSourceARN": "arn:{partition}:dynamodb:{region}:account-id:table/ExampleTableWithStream/stream/2015-06-27T00:48:05.899"
+        }
+    ]
+}
